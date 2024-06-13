@@ -58,3 +58,33 @@ Now apply the change by running:
 ```bash
 source ~/.zshrc
 ```
+
+## Install fzf-tab
+
+> [!IMPORTANT]
+>
+> 1. make sure [fzf](https://github.com/junegunn/fzf)  is installed
+> 2. fzf-tab needs to be loaded after `compinit`, but before plugins which will wrap widgets, such as [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) or [fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)
+
+Clone this repository to your custom directory and then add `fzf-tab` to your plugin list.
+
+```bash
+git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/fzf-tab
+```
+
+Add the plugin in `.zshrc`: `plugins=(git npm sudo fzf-tab zsh-autosuggestions vagrant)`
+
+Now apply the change by running:
+
+```bash
+source ~/.zshrc
+```
+
+
+
+
+
+
+
+
+
