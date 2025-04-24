@@ -140,6 +140,7 @@ alias sshconfig="nano ~/.ssh/config"
 ```bash
 # GIT aliases
 alias gitcfg="nano ~/.gitconfig"
+alias gs="git status"
 ```
 
 ### Other aliases
