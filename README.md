@@ -132,7 +132,7 @@ alias lst="eza --tree"
 ```bash
 # SSH aliases
 alias sshome="cd ~/.ssh"
-alias sshconfig="nano ~/.ssh/config"
+alias sshcfg="nano ~/.ssh/config"
 ```
 
 ### Aliases GIT
