@@ -1,13 +1,13 @@
 # Installation Oh My Zsh 💻
 
-
-
 Update the packages:
+
 ```bash
 sudo apt-get update && sudo apt-get upgrade
 ```
 
 Install zsh:
+
 ```bash
 sudo apt install zsh
 ```
@@ -63,7 +63,7 @@ source ~/.zshrc
 
 > [!IMPORTANT]
 >
-> 1. make sure [fzf](https://github.com/junegunn/fzf)  is installed
+> 1. make sure [fzf](https://github.com/junegunn/fzf) is installed
 > 2. fzf-tab needs to be loaded after `compinit`, but before plugins which will wrap widgets, such as [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) or [fast-syntax-highlighting](https://github.com/zdharma-continuum/fast-syntax-highlighting)
 
 Clone this repository to your custom directory and then add `fzf-tab` to your plugin list.
@@ -73,6 +73,12 @@ git clone https://github.com/Aloxaf/fzf-tab ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/p
 ```
 
 Add the plugin in `.zshrc`: `plugins=(git npm sudo fzf-tab zsh-autosuggestions vagrant)`
+
+Add to the end of `.zshrc`:
+
+```bash
+zstyle ':fzf-tab:*' fzf-bindings-default 'tab:down,btab:up,change:top,ctrl-space:toggle,bspace:backward-delete-char,ctrl-h:backward-delete-char'
+```
 
 Now apply the change by running:
 
@@ -102,7 +108,8 @@ sudo chmod 644 /etc/apt/keyrings/gierens.gpg /etc/apt/sources.list.d/gierens.lis
 sudo apt update
 sudo apt install -y eza
 ```
-_Note_: In strict apt environments, you may need to add the target: `echo "deb [arch=amd64 signed-by=...` 
+
+_Note_: In strict apt environments, you may need to add the target: `echo "deb [arch=amd64 signed-by=...`
 
 ## Adding aliases
 
@@ -142,6 +149,7 @@ alias sshcfg="nano ~/.ssh/config"
 alias gitcfg="nano ~/.gitconfig"
 alias gs="git status"
 ```
+
 ### Aliases PM2
 
 ```bash
@@ -162,17 +170,3 @@ alias c="clear"
 ```
 
 For a full list of active aliases, run `alias`.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
