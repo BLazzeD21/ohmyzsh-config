@@ -104,6 +104,59 @@ sudo apt install -y eza
 ```
 _Note_: In strict apt environments, you may need to add the target: `echo "deb [arch=amd64 signed-by=...` 
 
+## Adding aliases
+
+All lines should be added to the end of the `zsh` configuration file via `nano ~/.zshrc`.
+
+### Aliases for simplified configuration work
+
+```bash
+# zsh aliases
+alias zshcfg="nano ~/.zshrc"
+alias zshsrc="source ~/.zshrc"
+alias zshplgs="cd ~/.oh-my-zsh/custom/plugins"
+```
+
+### Aliases eza
+
+```bash
+# eza aliases
+alias ls="eza"
+alias lsl="eza --tree --level=1 --icons=always --no-time --no-user --no-permissions"
+alias lsa="eza -la --git"
+alias lst="eza --tree"
+```
+
+### Aliases SSH
+
+```bash
+# SSH aliases
+alias sshome="cd ~/.ssh"
+alias sshconfig="nano ~/.ssh/config"
+```
+
+### Aliases GIT
+
+```bash
+# GIT aliases
+alias gcfg="nano ~/.gitconfig"
+```
+
+### Other aliases
+
+```bash
+# Other aliases
+alias c="clear"
+```
+
+To view all aliases, use the `alias` command.
+
+
+
+
+
+
+
 
 
 
