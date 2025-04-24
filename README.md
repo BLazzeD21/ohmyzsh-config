@@ -139,7 +139,7 @@ alias sshconfig="nano ~/.ssh/config"
 
 ```bash
 # GIT aliases
-alias gcfg="nano ~/.gitconfig"
+alias gitcfg="nano ~/.gitconfig"
 ```
 
 ### Other aliases
