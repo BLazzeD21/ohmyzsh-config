@@ -142,6 +142,17 @@ alias sshconfig="nano ~/.ssh/config"
 alias gitcfg="nano ~/.gitconfig"
 alias gs="git status"
 ```
+### Aliases PM2
+
+```bash
+# PM2 aliases
+alias pmlogs="cd ~/.pm2/logs"
+alias pmm="pm2 monit"
+alias pmlog="pm2 logs"
+alias pml="pm2 list"
+alias pmf="pm2 flush"
+alias pmra="pm2 reload all"
+```
 
 ### Other aliases
 
