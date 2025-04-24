@@ -149,7 +149,7 @@ alias gcfg="nano ~/.gitconfig"
 alias c="clear"
 ```
 
-To view all aliases, use the `alias` command.
+For a full list of active aliases, run `alias`.
 
 
 
