@@ -36,7 +36,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 mv zsh-syntax-highlighting ~/.oh-my-zsh/plugins
 ```
 
-Then paste the following line at the end of the ~/.zshrc file:
+Then paste the following line into the terminal:
 
 ```bash
 echo "source ~/.oh-my-zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ~/.zshrc
